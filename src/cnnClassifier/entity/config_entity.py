@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from pathlib import Path
 
+
 @dataclass(frozen=True)
 class DataIngestionConfig:
    root_dir:Path
@@ -18,3 +19,14 @@ class PrepareBaseModelConfig:
    params_include_top:bool
    params_weights:str
    params_classes:int
+
+@dataclass(frozen=True)
+class TrainingConfig:
+    root_dir: Path
+    training_data:str
+    trained_model_path: Path
+    updated_base_model_path: Path
+    params_epochs: int
+    params_batch_size: int
+    params_image_size: list
+    params_is_augmentation: bool
