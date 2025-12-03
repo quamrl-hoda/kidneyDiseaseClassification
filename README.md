@@ -1,6 +1,10 @@
 # Kidney Disease Classification DL Project
-# workflows
+### install the requirements
+```bash
+pip install - requirements.txt
+```
 
+# workflows
 - Update config.yaml
 - Update secrets.yaml [Optional]
 - Update params.yaml
@@ -36,3 +40,10 @@ set MLFLOW_TRACKING_USERNAME = quamrl-hoda
 set MLFLOW_TRACKING_PASSWORD = 10bd4471835788590657bbf53e006492e901bc34
 
 ```
+
+
+### DVC cmd
+
+- dvc init
+- dvc repro
+- dvc dag
